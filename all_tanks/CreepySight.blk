@@ -55,27 +55,51 @@ drawLines {
     }
     
     line { // Verical center line
-	line:p4=0,3,0,8
+	line:p4=0,1.5,0,6
 	thousandth:b=true
     }
 
     line { // Left horizontal line
-	line:p4=-3,0,-10,0
+	line:p4=-2,0,-6,0
 	thousandth:b=true
     }
 
     line { // Rigth horizontal line
-	line:p4=3,0,10,0
+	line:p4=2,0,6,0
 	thousandth:b=true
     }
 }
 
 drawQuads {
     quad { // Distance indicator
-	tl:p2 = -0.068, -0;
-	tr:p2 = -0.063, -.0025;
-	bl:p2 = -0.068, 0;
-	br:p2 = -0.063, 0.0025;
+	tl:p2 = -0.068, -0
+	tr:p2 = -0.063, -.0025
+	bl:p2 = -0.068, 0
+	br:p2 = -0.063, 0.0025
+    }
+
+    quad {
+	tl:p2 = -16, -0.5
+	tr:p2 = -5, -0.5
+	bl:p2 = -16, 0.5
+	br:p2 = -5, 0.5
+	thousandth:b=true
+    }
+
+    quad {
+	tl:p2 = 5, -0.5
+	tr:p2 = 16, -0.5
+	bl:p2 = 5, 0.5
+	br:p2 = 16, 0.5
+	thousandth:b=true
+    }
+    
+    quad {
+	tl:p2 = -0.5, 5
+	tr:p2 = 0.5, 5
+	bl:p2 = -0.5, 13
+	br:p2 = 0.5, 13
+	thousandth:b=true
     }
 }
 
