@@ -11,7 +11,7 @@ rangefinderTextScale:r=0.5
 rangefinderVerticalOffset:r=-7
 rangefinderHorizontalOffset:r=75
 
-fontSizeMult:r=1.2
+fontSizeMult:r=1.1
 lineSizeMult:r=1.1
 
 drawCentralLineVert:b=no
@@ -72,10 +72,10 @@ drawLines {
 
 drawQuads {
     quad { // Distance indicator
-	tl:p2 = -0.068, 0;
-	tr:p2 = -0.058, -0.005;
+	tl:p2 = -0.068, -0;
+	tr:p2 = -0.063, -.0025;
 	bl:p2 = -0.068, 0;
-	br:p2 = -0.058, 0.005;
+	br:p2 = -0.063, 0.0025;
     }
 }
 
