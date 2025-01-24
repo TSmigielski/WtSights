@@ -1,0 +1,90 @@
+matchExpClass {
+    exp_tank:b=yes
+    exp_heavy_tank:b=yes
+    exp_tank_destroyer:b=yes
+    exp_SPAA:b=yes
+}
+
+rangefinderProgressBarColor1:c=0,180,0,85
+rangefinderProgressBarColor2:c=255,255,255,85
+rangefinderTextScale:r=0.5
+rangefinderVerticalOffset:r=-7
+rangefinderHorizontalOffset:r=75
+
+fontSizeMult:r=1.2
+lineSizeMult:r=1.1
+
+drawCentralLineVert:b=no
+drawCentralLineHorz:b=no
+drawSightMask:b=yes
+applyCorrectionToGun:b=yes
+drawDistanceCorrection:b=yes
+distanceCorrectionPos:p2=0.05,0
+
+distancePos:p2=0.1,0
+crosshairDistHorSizeMain:p2=0.025, 0.02
+crosshairDistHorSizeAdditional:p2=0.005, 0.003
+drawAdditionalLines:b = no
+
+crosshairColor:c=0,0,0,255
+crosshairLightColor:c=0,255,0,255
+
+crosshair_distances {
+    distance:p3=200, 0, 0
+    distance:p3=400, 4, 0
+    distance:p3=600, 0, 0
+    distance:p3=800, 8, 0
+    distance:p3=1000, 0, 0
+    distance:p3=1200, 12, 0
+    distance:p3=1400, 0, 0
+    distance:p3=1600, 16, 0
+    distance:p3=1800, 0, 0
+    distance:p3=2000, 20, 0
+    distance:p3=2200, 0, 0
+    distance:p3=2400, 24, 0
+    distance:p3=2600, 0, 0
+    distance:p3=2800, 28, 0
+}
+
+crosshair_hor_ranges{}
+
+drawLines {
+    line { // 0 range mark line
+	line:p4 = -0.106, 0, -0.07, 0
+	move:b = true
+    }
+    
+    line { // Verical center line
+	line:p4=0,3,0,8
+	thousandth:b=true
+    }
+
+    line { // Left horizontal line
+	line:p4=-3,0,-10,0
+	thousandth:b=true
+    }
+
+    line { // Rigth horizontal line
+	line:p4=3,0,10,0
+	thousandth:b=true
+    }
+}
+
+drawQuads {
+    quad { // Distance indicator
+	tl:p2 = -0.068, 0;
+	tr:p2 = -0.058, -0.005;
+	bl:p2 = -0.068, 0;
+	br:p2 = -0.058, 0.005;
+    }
+}
+
+drawCircles {
+    circle { // Centor "dot"
+	segment:p2 = 0.0, 360.0
+	pos:p2 = 0,0
+	diameter:r = 1
+	size:r = 1
+	thousandth:b = yes
+    }
+}
