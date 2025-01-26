@@ -8,8 +8,8 @@ matchExpClass {
 rangefinderProgressBarColor1:c=0,180,0,85
 rangefinderProgressBarColor2:c=255,255,255,85
 rangefinderTextScale:r=0.5
-rangefinderVerticalOffset:r=-7
-rangefinderHorizontalOffset:r=75
+rangefinderVerticalOffset:r=-4
+rangefinderHorizontalOffset:r=130
 
 fontSizeMult:r=1.1
 lineSizeMult:r=1.1
@@ -19,9 +19,9 @@ drawCentralLineHorz:b=no
 drawSightMask:b=yes
 applyCorrectionToGun:b=yes
 drawDistanceCorrection:b=yes
-distanceCorrectionPos:p2=0.05,0
+distanceCorrectionPos:p2=0.09,-0.001
 
-distancePos:p2=0.1,0
+distancePos:p2=0.15,0
 crosshairDistHorSizeMain:p2=0.025, 0.02
 crosshairDistHorSizeAdditional:p2=0.005, 0.003
 drawAdditionalLines:b = no
@@ -50,55 +50,55 @@ crosshair_hor_ranges{}
 
 drawLines {
     line { // 0 range mark line
-	line:p4 = -0.106, 0, -0.07, 0
+	line:p4 = -0.157, 0, -0.122, 0
 	move:b = true
     }
     
     line { // Verical center line
-	line:p4=0,1.5,0,6
+	line:p4=0,0.75,0,3
 	thousandth:b=true
     }
 
     line { // Left horizontal line
-	line:p4=-2,0,-6,0
+	line:p4=-1,0,-3,0
 	thousandth:b=true
     }
 
     line { // Rigth horizontal line
-	line:p4=2,0,6,0
+	line:p4=1,0,3,0
 	thousandth:b=true
     }
 }
 
 drawQuads {
     quad { // Distance indicator (triangle)
-	tl:p2 = -0.068, -0
-	tr:p2 = -0.063, -.0025
-	bl:p2 = -0.068, 0
-	br:p2 = -0.063, 0.0025
+	tl:p2 = -0.119, -0
+	tr:p2 = -0.11, -.005
+	bl:p2 = -0.119, 0
+	br:p2 = -0.11, 0.005
     }
 
     quad { // Left thicker line
-	tl:p2 = -16, -0.5
-	tr:p2 = -5, -0.5
-	bl:p2 = -16, 0.5
-	br:p2 = -5, 0.5
+	tl:p2 = -8, -0.225
+	tr:p2 = -2.5, -0.225
+	bl:p2 = -8, 0.225
+	br:p2 = -2.5, 0.225
 	thousandth:b=true
     }
 
     quad { // Right thicker line
-	tl:p2 = 5, -0.5
-	tr:p2 = 16, -0.5
-	bl:p2 = 5, 0.5
-	br:p2 = 16, 0.5
+	tl:p2 = 2.5, -0.225
+	tr:p2 = 8, -0.225
+	bl:p2 = 2.5, 0.225
+	br:p2 = 8, 0.225
 	thousandth:b=true
     }
     
     quad { // Bottom thicker line
-	tl:p2 = -0.5, 5
-	tr:p2 = 0.5, 5
-	bl:p2 = -0.5, 13
-	br:p2 = 0.5, 13
+	tl:p2 = -0.225, 2.5
+	tr:p2 = 0.225, 2.5
+	bl:p2 = -0.225, 6.5
+	br:p2 = 0.225, 6.5
 	thousandth:b=true
     }
 }
@@ -107,7 +107,7 @@ drawCircles {
     circle { // Centor "dot"
 	segment:p2 = 0.0, 360.0
 	pos:p2 = 0,0
-	diameter:r = 1
+	diameter:r = .5
 	size:r = 1
 	thousandth:b = yes
     }
